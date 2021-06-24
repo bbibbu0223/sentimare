@@ -1,0 +1,36 @@
+@charset 'utf-8';
+@import url('common.css');
+
+body{
+    background-color: #ebecf0;
+}
+div{}
+.line-1{}
+.table-1{
+    background-color: #fff;
+    width:80%;
+    border:1.5px solid #292f4e;
+    border-collapse: collapse;
+    
+    margin:0 auto;
+    margin-top:200px;
+    text-align:center;
+}
+th, td{
+    border:1px solid #292f4e;
+    padding:10px;
+    text-align: center;
+}
+h6{
+    padding-left:10%;
+    white-space: pre-line;
+    font-size:1rem;
+    line-height:2.5rem;
+    font-weight: normal;
+}
+footer{
+    padding:15px 0;
+    background-color: #292f4e;
+    color:#fff;
+    text-align: center;
+}
