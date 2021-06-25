@@ -6,9 +6,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link href="./css/index.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Nanum+Myeongjo&family=Noto+Sans+KR&display=swap" rel="stylesheet">
+   
+ 
 </head>
+
 <body>
     <!--header-->
+    
 
     <header>
        <div>
@@ -19,17 +24,20 @@
                     <span></span>
                 </a>
                 <div>
-                    <a href="#">introduce</a>
-                    <a href="#">room</a>
-                    <a href="#">reservation</a>
+                    <a href="introduce.html">introduce</a>
+                    <a href="room.html">room</a>
+                    <a href="reservation.html">reservation</a>
                     <a href="#">notice</a>
-                </div>    
+                    <a href="#"><img src="img/icon1.png"></a>
+                    <a href="#"><img src="img/icon2.png"></a>
+                </div> 
+                 
             </nav>
+            
             <h1><a href="#"><img src="img/logo.png"></a></h1>
             <a href="reservation.html"><img src="img/calendar.png"></a>
         </div>
     </header>
-
     <main>
 
         <div class='container'>
@@ -37,13 +45,12 @@
                 <source src="img/Beach - 28977.mp4" type="video/mp4">
             </video>
             
-                <p>학암포 해수욕장에 위치한
-                    아름다운 펜션
-                </p>
+                
                 
             
         </div>
-        
+        <p class="text">학암포 해수욕장에 위치한
+            아름다운 펜션</p>
     </main>
 
     <footer>
@@ -52,6 +59,17 @@
         </p>
     </footer>
 
+
+
+
+    <script>
+        const menuIc = document.querySelector('.menu_trigger');
+        const menu = document.querySelector('nav > div');
+        menuIc.addEventListener('click',function(){
+            menuIc.classList.toggle('active');
+            menu.classList.toggle('active');
+        });
+    </script>
 </body>
 
 </html>

@@ -2,14 +2,28 @@
 @import url('common.css');
 
 body{
-    background-color: #ebecf0;
+    background-color:#ebecf0;
 }
 div{}
+
+.no1 {
+    color:#292f4e;
+    display:block;
+    
+    padding-left:10%;
+    background-color: darkgoldenrod;
+}
+.no2{
+    color:rgb(145, 145, 189);
+    padding-left:10%;
+}
+
+
 .line-1{}
 .table-1{
     background-color: #fff;
     width:80%;
-    border:1.5px solid #292f4e;
+    border:1px solid #292f4e;
     border-collapse: collapse;
     
     margin:0 auto;
@@ -26,7 +40,24 @@ h6{
     white-space: pre-line;
     font-size:1rem;
     line-height:2.5rem;
+    font-weight: bold;
+}
+.txt-1{
+    
     font-weight: normal;
+    padding-left:20%;
+    /* background-color:deepskyblue; */
+    
+}
+.txt-2{
+    font-weight: normal;
+    padding-left:20%;
+    /* background-color:darkkhaki; */
+}
+.txt-3{
+    font-weight: normal;
+    padding-left:20%;
+    /* background-color:darksalmon; */
 }
 footer{
     padding:15px 0;

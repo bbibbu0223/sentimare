@@ -84,8 +84,12 @@ header> div nav> a:hover + div{
 
 
 
-.container{position:relative;}
-video{
+.container{
+    
+    position:relative;
+    
+}
+.container video{
     position:fixed;
     top:0; left:0;
     min-width:100%;
@@ -94,18 +98,26 @@ video{
     height:auto;
     z-index:-1;
 }
-p{
-    color:#fff;
-    font-size:1.2rem;
+.text{
+    writing-mode: vertical-rl;
+    text-orientation: mixed;
     white-space:pre-line;
-    display:flex;
-    flex-direction: column;
+    left:78%; top:30%;
+    position:absolute;
+    font-size:1.3rem;
+    font-weight: normal;
+    color:#292f4e;
+    
+   
+    
 }
 footer{
     position: absolute;
     left:40%;
     bottom:0%;
-    color:#fff;
+    color:#292f4e;
     text-align: center;
+    font-weight:normal;
+    
     
 }

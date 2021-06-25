@@ -1,7 +1,7 @@
 @charset 'utf-8';
 @import url('common.css');
 
-main{}
+
 .title{
     position:absolute;
     color:#fff;
@@ -24,7 +24,8 @@ h3{
     font-weight: normal;
     line-height: 2rem;
 }
-.room1, .room2, .room3{ 
+
+.room1, .room2{ 
     width: 100%; 
     margin: 0 auto;
     display: flex;
@@ -34,9 +35,25 @@ h3{
 }
 .room_img {width: 60%;}
 
-.room1 , .room2, .room3 > figure > img {width: 80%;}
+.room1 , .room2, .room3 > figure > img {width: 90%;}
 figcaption {padding-top: 1rem;}
-
+.number{
+    position:absolute;
+    font-size:3rem;
+    left:60%; top:205%;
+    
+}
+.number2{
+    position:absolute;
+    font-size:3rem;
+    right:70%; top:305%;
+}
+.number3{
+    
+    position:absolute;
+    font-size:3rem;
+    left:60%; top:405%;
+}
 h5 {
     white-space: pre-line;
     width: 40%;

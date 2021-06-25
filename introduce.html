@@ -17,9 +17,9 @@
                      <span></span>
                  </a>
                  <div>
-                     <a href="#">introduce</a>
-                     <a href="#">room</a>
-                     <a href="#">reservation</a>
+                     <a href="introduce.html">introduce</a>
+                     <a href="room.html">room</a>
+                     <a href="reservation.html">reservation</a>
                      <a href="#">notice</a>
                  </div>    
              </nav>
@@ -84,5 +84,13 @@
         Copyrigthⓒdaintec.co.kr All Right Reserved.</p>
      </footer>
 
+     <script>
+        const menuIc = document.querySelector('.menu_trigger');
+        const menu = document.querySelector('nav > div');
+        menuIc.addEventListener('click',function(){
+            menuIc.classList.toggle('active');
+            menu.classList.toggle('active');
+        });
+    </script>
 </body>
 </html>

@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link href="./css/room.css" rel="stylesheet">
+    
 </head>
 <body>
     <header>
@@ -16,12 +17,12 @@
                     <span></span>
                     <span></span>
                 </a>
-                <div>
-                    <a href="#">introduce</a>
-                    <a href="#">room</a>
-                    <a href="#">reservation</a>
+                <div >
+                    <a href="introduce.html">introduce</a>
+                    <a href="room.html">room</a>
+                    <a href="reservation.html">reservation</a>
                     <a href="#">notice</a>
-                </div>    
+                </div> 
             </nav>
             <h1><a href="index.html"><img src="img/logo.png"></a></h1>
             <a href="reservation.html"><img src="img/calendar.png"></a>
@@ -44,11 +45,13 @@
             </h3>
 
             <div class="room1">
+                
                 <figure class="room_img">
                     <img src="img/room1.jpg" alt="">
                     <figcaption>기본인원 6명(최대인원 8명)</figcaption>
                 </figure>
-                
+                <p class="number">101 - 106</p>
+               
                 <h5>1층 객실은 가족단위로 오시는 분들께
                     추천드리고 있습니다.
                     넉넉한 평수와 취사가 가능합니다.
@@ -56,6 +59,7 @@
             </div>
 
             <div class="room2">
+                <p class="number2">201 - 206</p>
                 <h5> 2층 객실은 커플에게 추천드리고 있습니다.
                     넉넉한 평수와 기본 옵션이 갖춰져있습니다.
                     (단,취사는 불가능합니다.)
@@ -66,12 +70,12 @@
                 </figure>
             </div>
 
-            <div class="room3">
+            <div class="room1">
                 <figure class="room_img">
                     <img src="img/room3.jpg" alt="">
                     <figcaption>기본인원 6명(최대인원 8명)</figcaption>
                 </figure>
-                
+                <p class="number3">301 - 306</p>
                 <h5>3층 객실은 구성원 상관없이 센티마르를 찾는
                     모든분들께 추천드리고 있습니다.
                     바다를 한 눈에 담기 가장 좋은 층입니다.
@@ -90,5 +94,15 @@
         <p>충남 태안군 원북면 방갈리 515-6번지<br>
         Copyrigthⓒdaintec.co.kr All Right Reserved.</p>
     </footer>
+
+
+    <script>
+        const menuIc = document.querySelector('.menu_trigger');
+        const menu = document.querySelector('nav > div');
+        menuIc.addEventListener('click',function(){
+            menuIc.classList.toggle('active');
+            menu.classList.toggle('active');
+        });
+    </script>
 </body>
 </html>
