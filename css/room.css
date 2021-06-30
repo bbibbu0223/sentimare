@@ -40,16 +40,20 @@ figcaption {padding-top: 1rem;}
 .number1{
     
     
+    position: absolute;
+    bottom: -120%;
     font-size:3rem;
     
     
 }
 .number2{
-    
+    position: absolute;
+    bottom: -217%;
     font-size:3rem;
 }
 .number3{
-    
+    position: absolute;
+    bottom: -320%;
     font-size:3rem;
 }
 h5 {
