@@ -87,6 +87,7 @@ header >div nav> a.active span:nth-child(3){
     bottom:calc(50% - 1px);
     transform:rotate(-45deg);
 }
+
 header > div nav> div{
     position:fixed;
     left:0; top:0;
@@ -101,6 +102,14 @@ header > div nav> div{
     flex-direction:column;
     display:none;
     
+}
+.icon1{
+    display: flex;
+    padding-left: 70%;
+}
+.icon2{
+    display: flex;
+    padding-left: 85%;
 }
 header > div nav> div a{
     padding:25px 0;
