@@ -103,14 +103,7 @@ header > div nav> div{
     display:none;
     
 }
-.icon1{
-    display: flex;
-    padding-left: 70%;
-}
-.icon2{
-    display: flex;
-    padding-left: 85%;
-}
+
 header > div nav> div a{
     padding:25px 0;
     color:#292f4e;
