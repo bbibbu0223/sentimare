@@ -107,9 +107,14 @@ header > div nav> div{
 header > div nav> div a{
     padding:25px 0;
     color:#292f4e;
-    font-size:2em;
+    font-size:2rem;
 }
 
 header> div nav > div.active{
     display:flex;
+}
+
+@media (max-width:768px){
+    header > div nav> div{width:100%;
+    opacity:100%;}
 }

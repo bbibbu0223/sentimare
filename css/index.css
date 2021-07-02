@@ -112,12 +112,17 @@ header> div nav> a:hover + div{
     
 }
 footer{
-    position: absolute;
-    left:43%;
-    bottom:0%;
+    display:flex;
+    justify-content: center;
     color:#292f4e;
     text-align: center;
     font-weight:normal;
     
+    padding-top:45%;
     
 }
+@media (max-width:768px){
+    .text{}
+    .footer{}
+}
+

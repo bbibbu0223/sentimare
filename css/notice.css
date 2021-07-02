@@ -54,7 +54,7 @@ ul, li{
 #ulTable > li > ul > li:first-child +li           {width:45%;} 
 #ulTable > li > ul > li:first-child +li+li        {width:20%;} 
 #ulTable > li > ul > li:first-child +li+li+li     {width:15%;} 
-#ulTable > li > ul > li:first-child +li+li+li+li{width:10%;} 
+#ulTable > li > ul > li:first-child +li+li+li+li  {width:10%;} 
 
 #divPaging {
     clear:both; 
