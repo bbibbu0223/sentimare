@@ -1,10 +1,6 @@
 @charset 'utf-8';
 
-
-html,body{
-    margin:0;
-    font-family: 'Nanum Myeongjo', serif;
-}
+html,body{margin:0;}
 ul,li,ol{
     list-style-type:none;
     margin:0;
@@ -75,6 +71,7 @@ header >div nav> a span:nth-child(3){
 }
 
 /* menu hover */
+
 header >div nav> a.active span:nth-child(1){
     top:calc(50% - 1px);
     transform:rotate(45deg);
@@ -112,9 +109,4 @@ header > div nav> div a{
 
 header> div nav > div.active{
     display:flex;
-}
-
-@media (max-width:768px){
-    header > div nav> div{width:100%;
-    opacity:100%;}
 }

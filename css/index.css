@@ -1,94 +1,7 @@
 @charset 'utf-8';
 @import url('common.css');
 
-
-/* *{margin:0;}
-header{
-    
-}
-header > div{
-    width:90%; 
-    display:flex;
-    justify-content:space-between;
-    align-items:center;
-    margin:0 auto;
-}
-header> div nav{
-    display:flex;
-    justify-content:space-between;
-    align-items:center;
-    padding:20px 5%;
-    top:0; left:0;
-}
-
-header > div nav > a{
-    width:25px; height:15px;
-    position:relative;
-    /* display:inline-block;
-    z-index:99999;
-}
-header> div nav > a span{
-    position:absolute;
-    left:0;
-    width:100%; height:2px;
-    background-color:#fff;
-    transition:0.5s;
-}
-header>div nav> a span:nth-child(1){
-    top:0;
-}
-header >div nav> a span:nth-child(2){
-    top:calc(50% - 1px);
-}
-header >div nav> a span:nth-child(3){
-    bottom:0;
-}
-
-/* menu hover */
-/* header >div nav> a:hover span:nth-child(1){
-    top:calc(50% - 1px);
-    transform:rotate(45deg);
-}
-header >div nav> a:hover span:nth-child(2){
-    top:calc(50% - 1px);
-    opacity:0;
-}
-header >div nav> a:hover span:nth-child(3){
-    bottom:calc(50% - 1px);
-    transform:rotate(-45deg);
-}
-header > div nav> div{
-    position:fixed;
-    left:0; top:0;
-
-    width:25%; height:100%;
-    background-color:white;
-    opacity:75%;
-    
-    display:flex;
-    align-items:center;
-    justify-content:center;
-    flex-direction:column;
-    display:none;
-    
-}
-header > div nav> div a{
-    padding:30px 0;
-    color:#000;
-    font-size:2em;
-}
-
-header> div nav> a:hover + div{
-    display:flex;
-} */
-
-
-
-.container{
-    
-    position:relative;
-    
-}
+.container{position:relative;}
 .container video{
     position:fixed;
     top:0; left:0;
@@ -98,31 +11,23 @@ header> div nav> a:hover + div{
     height:auto;
     z-index:-1;
 }
+.text{position: relative;}
 .text{
-    writing-mode: vertical-rl;
-    text-orientation: mixed;
+    writing-mode:vertical-lr;
     white-space:pre-line;
-    left:78%; top:35%;
+    left:75%; top:35%;
     position:absolute;
     font-size:1.3rem;
-    font-weight: normal;
+    font-weight:normal;
     color:#292f4e;
-    
-   
-    
 }
+footer{position: relative;}
 footer{
-    display:flex;
+    left:43%; top:90%;
+    position:absolute;
     justify-content: center;
     color:#292f4e;
     text-align: center;
     font-weight:normal;
-    
-    padding-top:45%;
-    
-}
-@media (max-width:768px){
-    .text{}
-    .footer{}
 }
 

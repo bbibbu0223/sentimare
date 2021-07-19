@@ -6,36 +6,41 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link href="./css/introduce.css" rel="stylesheet">
+    <script src="jquery-3.6.0.min.js"></script>
+    <script src="jquery-ui.min.js"></script>
 </head>
 <body>
+    <!--header-->
     <header>
         <div>
-             <nav>   
-                 <a class="menu_trigger">
-                     <span></span>
-                     <span></span>
-                     <span></span>
-                 </a>
-                 <div>
+            <nav>   
+                <a class="menu_trigger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </a>
+                <div>
                     <a href="index.html"><img src="img/logo2.png"></a>
-                     <a href="introduce.html">introduce</a>
-                     <a href="room.html">room</a>
-                     <a href="reservation.html">reservation</a>
-                     <a href="notice.html">notice</a>
+                    <a href="introduce.html">Introduce</a>
+                    <a href="room.html">Room</a>
+                    <a href="reservation.html">Reservation</a>
+                    <a href="notice.html">Notice</a>
                     
-                 </div>    
-             </nav>
-             <h1><a href="index.html"><img src="img/logo.png"></a></h1>
-             <a href="reservation.html"><img src="img/calendar.png"></a>
-         </div>
-     </header>
-     
-     <main>
-        <div class="title">introduce</div>
+                </div>    
+            </nav>
+            
+            <h1><a href="index.html"><img src="img/logo.png"></a></h1>
+            <a href="reservation.html"><img src="img/calendar.png"></a>
+        </div>
+    </header>
+
+    <!--main-->
+    <main>
+        <div class="title">Introduce</div>
         <img src="img/introduce.jpg">
-        
+        <section class="page-start">
         <div class="container">
-           <figure><img src="img/home.jpg"></figure>
+            <figure><img src="img/home.jpg"></figure>
                 <p> /<br>
                     센티마르 펜션은, 
                     충남 태안군 학암포 해수욕장에 위치하여
@@ -71,28 +76,44 @@
             <p> /
                 센티마르 시설<br>
                 <br>센티마르는 야외 수영장과 글램핑장 그리고 바베큐장을 제공해드리고 있습니다.<br>시설 이용은 직원에게 언제든지 문의가 가능하며<br>시설 이용 예약 또한 도와드리고 있습니다.<br>/ </p>
-          </div>
+        </div>
 
-          <div class="container3">
-              <p>오시는 길</p>
-              <figure>
-                  <img src="img/map.png" alt="">
-              </figure>
-          </div>
-     </main>
+        <div class="container3">
+            <p>오시는 길</p>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3190.6699530333703!2d126.20802155126498!3d36.89824317982991!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x357a3ed23fe71e2d%3A0x509752f1d62232c8!2s515-6%20Bangal-ri%2C%20Wonbuk-myeon%2C%20Taean-gun%2C%20Chungcheongnam-do!5e0!3m2!1sen!2skr!4v1626425751278!5m2!1sen!2skr" 
+            width="1200" height="450" style="border:0;" allowfullscreen="100;" loading="lazy">
+            </iframe>
+            
+        </div>
+    </main>
 
-     <footer>
+    <!--footer-->
+    <footer>
         <p>충남 태안군 원북면 방갈리 515-6번지<br>
         Copyrigthⓒdaintec.co.kr All Right Reserved.</p>
-     </footer>
+    </footer>
+    </section>
 
-     <script>
+    <!--script-->
+    <script>
         const menuIc = document.querySelector('.menu_trigger');
         const menu = document.querySelector('nav > div');
         menuIc.addEventListener('click',function(){
             menuIc.classList.toggle('active');
             menu.classList.toggle('active');
         });
+
+        const header = document.querySelector('header');
+        const headerHeight = header.getBoundingClientRect().height;
+
+        window.addEventListener("scroll",function(){
+            if (window.scrollY > headerHeight) {
+                header.setAttribute("style", "background: #292f4e;");
+            } else {
+            header.setAttribute("style", "background: transparent;");
+            }
+        });
     </script>
+
 </body>
 </html>
