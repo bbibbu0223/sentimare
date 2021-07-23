@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>sentimare</title>
     <link href="./css/index.css" rel="stylesheet">
+    <script src="./js/jquery-3.6.0.min.js"></script>
+    <script src="./js/common.js"></script>
     
     <meta property="og:title" content="sentimare">
     <meta property="og:url" content="https://bbibbu0223.github.io/sentimare/">
@@ -23,27 +25,7 @@
 
 <body>
     <!--header-->
-    <header>
-        <div>
-            <nav>   
-                <a class="menu_trigger">
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                </a>
-                <div>
-                    <a href="index.html"><img src="img/logo2.png"></a>
-                    <a href="introduce.html">Introduce</a>
-                    <a href="room.html">Room</a>
-                    <a href="reservation.html">Reservation</a>
-                    <a href="notice.html">Notice</a>
-                </div> 
-            </nav>
-            
-            <h1><a href="#"><img src="img/logo.png"></a></h1>
-            <a href="reservation.html"><img src="img/calendar.png"></a>
-        </div>
-    </header>
+    <header></header>
     
     <!--main-->
     <main>
@@ -59,21 +41,10 @@
     </main>
 
     <!--footer-->
-    <footer>
-        <p>충남 태안군 원북면 방갈리 515-6번지<br>
-        Copyrigthⓒdaintec.co.kr All Right Reserved
-        </p>
-    </footer>
+    <footer></footer>
     
     <!--script-->
-    <script>
-        const menuIc = document.querySelector('.menu_trigger');
-        const menu = document.querySelector('nav > div');
-        menuIc.addEventListener('click',function(){
-            menuIc.classList.toggle('active');
-            menu.classList.toggle('active');
-        });
-    </script>
+
 
 </body>
 
