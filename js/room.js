@@ -1,20 +1,19 @@
-//room.js
-function init(){
-    const elP = document.querySelectorAll('p');
-    let data,tagList='';
+$(function(){
+    //start
 
-    fetch('data.json')
-    .then( res => res.json())
-    .then( data => callback(data));
+    $.ajax({
+        url:'js/data.json',
+        success:function(data){
+            // console.log('hi');
+            let tagList='',idx=0;
 
-    function callback(data){
-        
-        data.room.forEach(function(data){
-            tagList += `<p>${data.info}</p>`;
-        });
-        elP.innerHTML = tagList;
-        
-    }
+            data.room.forEach(function(v){
+                tagList +=`<p>${v.info[idx]}</p>`;
+                console.log(tagList);
+            });
 
-}
-window.onload = init;
+            $('.room1 p, .room2 p, .room3 p').html(tagList);
+
+        }
+    });
+});

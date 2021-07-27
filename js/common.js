@@ -3,6 +3,7 @@ $(function(){
     $('header').load('inc.html header > div',nav);
     $('footer').load('inc.html footer > div');
 
+    
     function nav(){
         const menuIc = document.querySelector('.menu_trigger');
         const menu = document.querySelector('nav > div');
@@ -11,6 +12,8 @@ $(function(){
             menu.classList.toggle('active');
         });
     }
+
+    
 });
 
 

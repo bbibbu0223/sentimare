@@ -47,7 +47,7 @@ h4{
     position: relative;
 }
 .room1 p{
-    font-size: 1rem;
+    font-size: 1.2rem;
     position: absolute;
     left:67%;
     top:230%;
@@ -58,7 +58,7 @@ h4{
     
 }
 .room2 p{
-    font-size: 1rem;
+    font-size: 1.2rem;
     top:355%;
     position: absolute;
     left:12%;
@@ -67,7 +67,7 @@ h4{
     white-space: pre-line;
 }
 .room3 p{
-    font-size: 1rem;
+    font-size: 1.2rem;
     position:absolute;
     top:480%;
     left:65%;

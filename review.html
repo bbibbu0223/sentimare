@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="./css/review.css" rel="stylesheet">
+</head>
+<body>
+    
+    <header>
+        <div>
+            <nav>   
+                <a class="menu_trigger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </a>
+                <div>
+                    <a href="index.html"><img src="img/logo2.png"></a>
+                    <a href="introduce.html">Introduce</a>
+                    <a href="room.html">Room</a>
+                    <a href="reservation.html">Reservation</a>
+                    <a href="review.html">Review</a>
+                    
+                </div>    
+            </nav>
+            <h1><a href="index.html"><img src="img/logo.png"></a></h1>
+            <a href="reservation.html"><img src="img/calendar.png"></a>
+        </div>
+    </header>
+    
+    <!--main-->
+    <main>
+        <div class="title">Review</div>
+            <img src="img/review.jpg">
+        
+        <div class="container">
+                <h3>Gallery</h3>
+            </div>
+        
+        <div>
+            <ul class="container2">
+                <li>
+                    <p><img src="img/review1.jpg"></p>
+                    <p>이미지 설명글</p>
+                    
+                </li>
+                <li>
+                    <p><img src="img/review2.jpg"></p>
+                    <p>이미지 설명글</p>
+                    
+                </li>
+                <li>
+                    <p><img src="img/review3.jpg"></p>
+                    <p>이미지 설명글</p>
+                </li>
+                <li>
+                    <p><img src="img/review4.jpg"></p>
+                    <p>이미지 설명글</p>
+                    
+                </li>
+                <li>
+                    <p><img src="img/review5.jpg"></p>
+                    <p>이미지 설명글</p>
+                </li>
+                <li>
+                    <p><img src="img/review6.jpg"></p>
+                    <p>이미지 설명글</p>
+                </li>
+            </ul>
+        </div>
+
+        
+
+
+    </main>
+
+    
+        <script>
+            const menuIc = document.querySelector('.menu_trigger');
+            const menu = document.querySelector('nav > div');
+            menuIc.addEventListener('click',function(){
+                menuIc.classList.toggle('active');
+                menu.classList.toggle('active');
+            });
+    
+            const header = document.querySelector('header');
+            const headerHeight = header.getBoundingClientRect().height;
+    
+            window.addEventListener("scroll",function(){
+                if (window.scrollY > headerHeight) {
+                    header.setAttribute("style", "background: #292f4e;");
+                } else {
+                header.setAttribute("style", "background: transparent;");
+                }
+            });
+        </script>
+    
+
+</body>
+</html>

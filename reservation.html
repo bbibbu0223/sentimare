@@ -21,7 +21,7 @@
                     <a href="introduce.html">introduce</a>
                     <a href="room.html">room</a>
                     <a href="reservation.html">reservation</a>
-                    <a href="notice.html">notice</a>
+                    <a href="review.html">Review</a>
                     
                  </div>    
              </nav>
@@ -217,6 +217,17 @@
         menuIc.addEventListener('click',function(){
             menuIc.classList.toggle('active');
             menu.classList.toggle('active');
+        });
+
+        const header = document.querySelector('header');
+        const headerHeight = header.getBoundingClientRect().height;
+
+        window.addEventListener("scroll",function(){
+            if (window.scrollY > headerHeight) {
+                header.setAttribute("style", "background: #292f4e;");
+            } else {
+            header.setAttribute("style", "background: transparent;");
+            }
         });
     </script>
 </body>
