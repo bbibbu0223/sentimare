@@ -12,6 +12,7 @@ main{}
     font-size:2rem;
     font-weight:normal;
     top:30%; left:80%; right:20%;
+    
 }
 main img{width:100%; margin:0 auto;}
 
@@ -24,12 +25,12 @@ h3{
     line-height: 2rem;
 }
 
+
 .container2{
     margin:50px; padding:0;
     display:flex;  
     flex-wrap:wrap;
     justify-content:space-between;
-    
 }
 
 .container2 li{
@@ -37,37 +38,46 @@ h3{
     margin-bottom:5%;
     position:relative;
     overflow:hidden;
-    
 }
 
-.container2 li p{}
-.container2 li p:nth-child(1){}
-.container2 li p:nth-child(2){
+
+.container2 li figure{}
+.container2 li figure p{
     position:absolute;
     left:-100%; bottom:0;
     color:#fff;
-    
+    font-size:1.2rem;
+    line-height:150px;
+
     background:#292f4e;
+    
     width:100%; height:100%;
     text-align:center;
-    line-height:130px;
+    
     opacity:75%;
 
 }
-.container2 li p img{
-    width:480px; height:680px; 
-    border-radius:25px;
+.container2 li figure img{
+    width:100%; height:80vh; 
+    
     transition:.5s;
-    z-index:-1;
+    
 }
 
-.container2 li:hover p:nth-child(2){
+.container2 li:hover p{
     left:0;
     transition:.5s;
+    
 }
-.container2 li:hover p img{
-    width:120%
+.container2 li:hover figure img{
+    width:120%;
 }
 
 
+footer{
+    padding:15px 0;
+    background-color:#292f4e;
+    color:#fff;
+    text-align: center;
+}
 
