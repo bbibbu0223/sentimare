@@ -5,14 +5,16 @@ $(function(){
         url:'js/data.json',
         success:function(data){
             // console.log('hi');
-            let tagList='',idx=0;
+            let tagList='';
 
-            data.room.forEach(function(v){
-                tagList +=`<p>${v.info[idx]}</p>`;
+            data.room.forEach(function(v,k){
+                tagList =`<p>${v.info}</p>`;
                 console.log(tagList);
+
+                $(`.room${k+1}`).append(tagList);
             });
 
-            $('.room1 p, .room2 p, .room3 p').html(tagList);
+            
 
         }
     });

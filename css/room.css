@@ -49,7 +49,7 @@ h4{
 .room1 p{
     font-size: 1rem;
     position: absolute;
-    left:67%;
+    left:70%;
     top:230%;
     text-align:center; 
     justify-content: center;
@@ -59,9 +59,9 @@ h4{
 }
 .room2 p{
     font-size: 1rem;
-    top:350%;
+    top:355%;
     position: absolute;
-    left:12%;
+    left:10%;
     z-index:-1;
     text-align:center; 
     white-space: pre-line;
@@ -70,7 +70,7 @@ h4{
     font-size: 1rem;
     position:absolute;
     top:475%;
-    left:65%;
+    left:70%;
     
     z-index:-1;
     text-align: center; 
