@@ -47,7 +47,7 @@ main img{width:100%; margin:0 auto;}
     padding:10px;
     margin:0 auto;
 }
-
+.container2 > p {padding-bottom:80px;}
 .container2 p{
     
     display:block;
