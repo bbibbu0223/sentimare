@@ -88,3 +88,47 @@ footer{
     color:#fff;
     text-align: center;
 }
+
+/* media */
+@media (max-width : 1290px){
+    
+}
+@media (max-width : 1024px){
+    
+}    
+@media (max-width: 960px){
+    
+}
+@media (max-width: 767px){
+    .info {
+        padding: 3% 0;
+    }
+    
+    .info > li {
+        display: block;
+        justify-content: space-between;
+        padding: 3% 0;
+    }
+    
+    
+    .title{ 
+        width: 10%;
+        line-height: 2.4rem;
+        color:#292f4e;
+        font-weight: 600;
+    }
+    
+    .txt-1{
+        width: 90%;
+        font-weight: normal;
+        white-space: pre-line;
+        line-height: 2.4rem;
+        color:#292f4e;
+    
+    }
+
+}
+@media (max-width: 480px){
+    
+}
+

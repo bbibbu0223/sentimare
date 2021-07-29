@@ -189,3 +189,28 @@
 .slick-list img{width:100%; height:100vh;}
 
 
+/* media */
+@media (max-width: 960px){
+    .slider{
+        width:100%; height:100vh;
+        position: relative;
+        justify-content:center;
+        align-items: center;
+    }
+    .slider2{
+        width:100%; height:100vh;
+        position: relative;
+        justify-content:center;
+        align-items: center;
+    }
+    .slider3{
+        
+        width:100%; height:100vh;
+        position: relative;
+        justify-content:center;
+        align-items: center;
+    }
+    .slick-list{width:100%; height:100vh;}
+    .slick-list img{width:100%; height:100vh;}
+
+}

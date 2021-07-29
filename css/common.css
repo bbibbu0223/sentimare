@@ -115,3 +115,31 @@ header > div nav> div a{
 header> div nav > div.active{
     display:flex;
 }
+
+/* media */
+@media (max-width : 1290px){
+    .container{width:100%;}
+}
+@media (max-width : 1024px){
+    .container{width:100%;}
+}
+@media (max-width: 960px){
+    .container{width:100%;}
+    header > div nav> div {
+        width:30%; height:100%;
+    }
+}
+@media (max-width: 767px){
+    .container{width:100%;}
+    header > div nav> div {
+        width:40%; height:100%;
+    }
+    
+}
+@media (max-width: 480px){
+    .container{width:100%;}
+    header > div nav> div {
+        width:100%; height:100%;
+    }
+}
+

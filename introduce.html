@@ -6,35 +6,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link href="./css/introduce.css" rel="stylesheet">
-    <script src="jquery-3.6.0.min.js"></script>
-    <script src="jquery-ui.min.js"></script>
+    <script src="./js/jquery-3.6.0.min.js"></script>
     <script src="./js/common.js"></script>
     
 </head>
 <body>
     <!--header-->
-    <header>
-        <div>
-            <nav>   
-                <a class="menu_trigger">
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                </a>
-                <div>
-                    <a href="index.html"><img src="img/logo2.png"></a>
-                    <a href="introduce.html">Introduce</a>
-                    <a href="room.html">Room</a>
-                    <a href="reservation.html">Reservation</a>
-                    <a href="review.html">Review</a>
-                    
-                </div>    
-            </nav>
-            
-            <h1><a href="index.html"><img src="img/logo.png"></a></h1>
-            <a href="reservation.html"><img src="img/calendar.png"></a>
-        </div>
-    </header>
+    <header></header>
 
     <!--main-->
     <main>
@@ -59,19 +37,19 @@
                 <li>
                     <figure>
                         <img src="img/img1.jpg" alt="">
-                        <p>야외 수영장</p>
+                        <p><b>야외 수영장</b></p>
                     </figure>
                 </li>
                 <li>
                     <figure>
                         <img src="img/img2.jpg" alt="">
-                        <p>글램핑장</p>
+                        <p><b>글램핑장</b></p>
                     </figure>
                 </li>
                 <li>
                     <figure>    
                         <img src="img/img3.jpg" alt="">
-                        <p>바베큐장</p>
+                        <p><b>바베큐장</b></p>
                     </figure>    
                 </li>
             </ul>
@@ -90,32 +68,11 @@
     </main>
 
     <!--footer-->
-    <footer>
-        <p>충남 태안군 원북면 방갈리 515-6번지<br>
-        Copyrigthⓒdaintec.co.kr All Right Reserved.</p>
-    </footer>
+    <footer></footer>
     </section>
 
     <!--script-->
-    <script>
-        const menuIc = document.querySelector('.menu_trigger');
-        const menu = document.querySelector('nav > div');
-        menuIc.addEventListener('click',function(){
-            menuIc.classList.toggle('active');
-            menu.classList.toggle('active');
-        });
-
-        const header = document.querySelector('header');
-        const headerHeight = header.getBoundingClientRect().height;
-
-        window.addEventListener("scroll",function(){
-            if (window.scrollY > headerHeight) {
-                header.setAttribute("style", "background: #292f4e;");
-            } else {
-            header.setAttribute("style", "background: transparent;");
-            }
-        });
-    </script>
+    
 
 </body>
 </html>
