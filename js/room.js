@@ -13,10 +13,6 @@ $(function(){
 
                 $(`.room${k+1}`).append(tagList);
             });
-        
-            
-            
-
         }
 
     });
