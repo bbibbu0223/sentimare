@@ -85,7 +85,7 @@ header >div nav> a.active span:nth-child(1){
 header >div nav> a.active span:nth-child(2){
     top:calc(50% - 1px);
     opacity:0;
-    background-color:#292f4e;
+    /* background-color:#292f4e; */
 
 }
 header >div nav> a.active span:nth-child(3){
@@ -112,7 +112,7 @@ header > div nav> div{
 }
 
 header > div nav> div a{
-    padding:25px 0;
+    padding:20px 0;
     color:#292f4e;
     font-size:2rem;
 }
@@ -122,7 +122,7 @@ header > div nav > div a:hover{
 }
 
 header> div nav > div.active{
-    display:flex;
+    display:flex; 
 }
 
 .circle {
