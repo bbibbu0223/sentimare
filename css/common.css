@@ -80,14 +80,19 @@ header >div nav> a span:nth-child(3){
 header >div nav> a.active span:nth-child(1){
     top:calc(50% - 1px);
     transform:rotate(45deg);
+    background-color:#292f4e;
 }
 header >div nav> a.active span:nth-child(2){
     top:calc(50% - 1px);
     opacity:0;
+    background-color:#292f4e;
+
 }
 header >div nav> a.active span:nth-child(3){
     bottom:calc(50% - 1px);
     transform:rotate(-45deg);
+    background-color:#292f4e;
+
 }
 
 header > div nav> div{
@@ -114,7 +119,6 @@ header > div nav> div a{
 
 header > div nav > div a:hover{
     color:#6c84ff;
-    
 }
 
 header> div nav > div.active{
