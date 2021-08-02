@@ -112,6 +112,11 @@ header > div nav> div a{
     font-size:2rem;
 }
 
+header > div nav > div a:hover{
+    color:#6c84ff;
+    
+}
+
 header> div nav > div.active{
     display:flex;
 }
