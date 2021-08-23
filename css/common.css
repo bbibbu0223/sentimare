@@ -134,6 +134,7 @@ header> div nav > div.active{
     border-radius: 50%;
     background-color: #292f4e;
     transform: translate(-50%, -50%);
+    pointer-events: none;
 }
 
 /* media */
