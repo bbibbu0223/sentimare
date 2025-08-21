@@ -1,46 +1,32 @@
-$(function(){
-    
-    $('header').load('inc.html header > div',nav);
-    $('footer').load('inc.html footer > div');
+$(function () {
+    $('header').load('/common/html/inc.html header > div');
+    $('footer').load('/common/html/inc.html footer > div');
 
-    
-    function nav(){
-        const menuIc = document.querySelector('.menu_trigger');
-        const menu = document.querySelector('nav > div');
-            menuIc.addEventListener('click',function(){
-            menuIc.classList.toggle('active');
-            menu.classList.toggle('active');
-        });
-
-        
-
-        const header = document.querySelector('header');
-        const headerHeight = header.getBoundingClientRect().height;
-
-        window.addEventListener("scroll",function(){
-            if (window.scrollY > headerHeight) {
-                header.setAttribute("style", "background: #292f4e;");
-                header.style.zIndex = "1";  
-            } else {
-            header.setAttribute("style", "background: transparent;");
-            header.style.zIndex = "1";  
-            }
-        });
-
-        const circle = document.querySelector(".circle");
-
-        document.addEventListener("mousemove", (e) => {
-            const mouseX = e.clientX;
-            const mouseY = e.clientY;
-            circle.style.left = mouseX + 'px';
-            circle.style.top = mouseY + 'px';
-            circle.style.zIndex ="-1";
-        });
-        
-    }
-
-    
+    $(".slider").slick({
+        arrows: false,
+        dots: true,
+        infinite: true,
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        autoplay: true,
+        autoplaySpeed: 3000
+    });
 });
 
+// mouse
+$(document).mousemove(function (e) {
 
+    let cursorWidth = $(".cursor").width() / 2;
+    let cursorFWidth = $(".cursor").width() / 2;
 
+    gsap.to(".cursor", {
+        duration: 0.6,
+        left: e.pageX - cursorWidth,
+        top: e.pageY - cursorWidth
+    });
+    gsap.to(".cursor-follower", {
+        duration: 1.6,
+        left: e.pageX - cursorFWidth,
+        top: e.pageY - cursorFWidth
+    });
+});
